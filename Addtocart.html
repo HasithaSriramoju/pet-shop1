@@ -1,0 +1,399 @@
+<html>
+<head> 
+<style>
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    margin:0px;
+    padding: 0px;
+    font-family: poppins;
+    background-image:url('https://cdn.wallpapersafari.com/32/78/dTuctf.jpg');
+	image width="1600" height="1600";
+}
+*{
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+nav{
+    width:100%;
+    box-shadow: 2px 2px  rga(0,0,0.05);
+    z-index: 100;
+}
+
+
+
+.form{
+    width:750px;
+    padding: 20px 10px;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+    position: relative;
+ 
+}
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.form{
+    color: #272727;
+    font-size: 2rem;
+    margin: 2px 7px 7px 7px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+}
+.form{
+    width:90%;
+    height: 70px;
+    margin: 6px 0px;
+    padding: 0px 10px;
+    border: 1px solid rgba(0,0,0,0.1);
+    outline: none;
+    border-radius: 7px;
+}
+.login-form input::placeholder,
+.sign-up-form input::placeholder{
+    color: rgba(0,0,0,0.5);
+}
+.login-form input[type="submit"],
+.sign-up-form input[type="submit"]{
+    background-color: #0b9d8a;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    margin-top: 10px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+}
+
+  .login-form,
+    .sign-up-form{
+        width:90%;
+    }
+	.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 45px;
+}
+
+.social-call{
+    height: 40px;
+    border: 1px solid rgba(0,0,0,0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social a{
+    margin: 0px 5px;
+    color: rgba(0,0,0,0.7);
+    font-size: 0.9rem;
+}
+.phone{
+    color: rgba(0,0,0,0.7);
+    margin-left: 30px;
+    font-size: 0.9rem;
+}
+.social a:hover{
+    color: #0b9d8a;
+    transition: all ease 0.3s;
+}
+.logo img{
+    height: 90px;
+}
+.menu{
+    display: flex;
+}
+.menu li{
+    position: relative;
+    margin: 20px;
+    display: flex;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.menu li a{
+    color: #555555;
+}
+.right-menu a{
+    margin: 0px 10px;
+    font-size: 1.2rem;
+    color: rgba(0,0,0,0.7);
+}
+.menu a:hover,
+.right-menu a:hover,
+.search-cancel:hover,
+.form-cancel:hover{
+background-color: #ddd;
+    color: #black;
+    transition: all ease 0.3s;
+}
+.sale-lable{
+    width:38px;
+    height: 17px;
+    background-color: #f76b6a;
+    color: #ffffff;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+}
+.sale-lable:after{
+    content: '';
+    width:0px;
+    height: 0px;
+    border-bottom: 5px solid transparent;
+    border-left: 3px solid transparent;
+    border-top: 7px solid #f76b6a;
+    border-right: 5px solid transparent;
+    position: absolute;
+    left: 10%;
+    top: 100%;
+}
+
+.fa-shopping-cart{
+    position: relative;
+}
+.num-cart-product{
+    position: absolute;
+    top: -17px;
+    right: -17px;
+    width:25px;
+    height: 25px;
+    font-size: 0.8rem;
+    border-radius: 50%;
+    background-color: #0b9d8a;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+}
+
+
+
+@keyframes search{
+    0%{
+        bottom: -300px;
+    }
+    100%{
+        bottom: 0px;
+    }
+	}
+	 
+	 .form{
+    width:100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 102;
+}
+.form-btns{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+.form-btns a{
+    color: #4d4d4d;
+    font-size: 0.9rem;
+}
+.sign-up-btn{
+    border-bottom: 1px solid #868686;
+    line-height: 16px;
+}
+.form-cancel{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    color: #868686;
+}
+
+    }
+    .services{
+        width:100%;
+    }
+    .services-box{
+        width:100%;
+    }
+    .copyright{
+        margin: 20px 0px;
+        text-align: center;
+    }
+    .subscribe{
+        width:100%;
+    }
+    .subscribe form{
+        flex-wrap: nowrap;
+        display: flex;
+        width:100%;
+    }
+    .subscribe input{
+        width:100%;
+        flex-grow: 1;
+    }
+
+    }
+	footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.copyright{
+    font-size: 0.9rem;
+    color: #4e4e4e;
+    letter-spacing: 1px;
+}
+.subscribe input{
+    width:240px;
+    height: 43px;
+    padding: 0px 20px;
+    border: 1px solid rgba(0,0,0,0.1);
+    outline: none;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.05);
+}
+.subscribe input[type="submit"]{
+    width:120px;
+    background-color: #0b9d8a;
+    color: #ffffff;
+    margin: 0px 5px;
+}
+ /*--For-make-Menu-responsive------------*/
+  $(document).ready(function(){
+		$('.toggle').click(function(){
+			$('.toggle').toggleClass('active')
+			$('.navigation').toggleClass('active')
+		})
+	});
+  
+ </style>
+</head>
+<body>
+ <nav> 
+           <!--social-links-and-phone-number----------------->
+    <div class="social-call">
+        <!--social-links--->
+        <div class="social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <!--phone-number------>
+        <div class="phone">
+            <span>Call: +123456789</span>
+        </div>
+    </div>
+    <!--menu-bar----------------------------------------->
+    <div class="navigation">
+        <!--logo------------>
+        <a href="#" class="logo"><img src="https://d144mzi0q5mijx.cloudfront.net/img/P/E/Pet-Shop.png"
+	</a>
+        <!--menu-icon------------->
+        <div class="toggle"></div>
+        <!--menu----------------->
+        <ul class="menu">
+            <li><a href="Home.html">Home</a></li>
+            <li  class="shop"><a href="accessories.html" >Accessories</a></li>
+			<li class=" payment
+            
+                <!--lable---->
+             
+            <li><a href="#">Food</a></li>
+            <li><a href="#">Health care</a></li>
+        </ul>
+        <!--right-menu----------->
+        <div class="right-menu">
+            <a href="search..">
+                <i class="fas fa-search"></i>
+            </a>
+			
+            <a href="signup.html">
+                <i class="far fa-user"></i>
+				
+            </a>
+        
+            <a href="#">
+                <i class="fas fa-shopping-cart">
+                    <span class="num-cart-product">0</span>
+                </i>
+            </a>
+		
+        </div>
+        </div>
+    </nav>
+	
+
+ <nav>
+  <head>
+<title>FORM</title>
+</head>
+<form action = ""method = "GET">
+First name: <input type = "text" name = "first_name"/>
+<br><br>
+Last name: <input type = "text" name = "Last_name"/>
+</br></br>
+Address:<textarea rows = "4" cols = "40" name = "description">
+</textarea> <br><br>
+</textarea> <br><br>
+ph no:<input type="tel" name="ph"value="">
+<br><br>
+E-mail: <input type = "email" name = "email" value=""><br><br>
+Payment:<input type = "checkbox" name = "Gpay" value="on">Gpay
+<input type = "checkbox" name = "Paytm"value = "on">Paytm
+<input type = "checkbox" name = "Cash on delivery"value = "on">Cash on delivery
+<br><br>
+state:
+<select name = "dropdrown">
+<option value = "Telangana" selected>Telangana</option>
+<option value = "other">other</option>
+</select>
+<br><br>
+  submit:
+<li><a href="Home.html">Confirm Order</a></li>
+	<footer>
+        <!--copyright-------------->
+        <span class="copyright">
+            Copyright 2020 - GoingToInternet
+        </span>
+        <!--subcribe---------------->
+        <div class="subscribe">
+            <form>
+            <input type="email" placeholder="Example@gmail.com" required/>
+            <input type="submit" value="Subscribe">
+            </form>
+        </div>
+    </footer>
+	</nav>
+	
+			
+</body>
